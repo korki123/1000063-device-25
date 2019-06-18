@@ -16,22 +16,38 @@
 
         <nav class="site-navigation">
           <ul class="user-navigation">
-            <li>
-              <a class="logo-device" href=""><img src="img/logo-device.svg" width="164px" height="36px" alt="Логотип Девайса"></a>
+            <li class="logo-device">
+              <a href=""><img src="img/logo-device.svg" width="164px" height="36px" alt="Логотип Девайса"></a>
             </li>
             <li class="search"><img src="img/search.svg" width="16px" height="16px" alt="иконка Поиск"><input type="search" name="" value="Поиск по сайту">
             </li>
-            <li class="user-login">
-              <a href="#"><img src="img/user.svg" width="13px" height="12px" alt="иконка Посетитель"> <span>Валентин Петухов</span></a><a href="#"><span class="user-logout">Выйти</span> </a>
+
+            <li>
+              <ul class="user-login-logout">
+                <li class="user-login"><a href="#"><img src="img/user.svg" width="13px" height="12px" alt="иконка Посетитель"> <span>Войти</span></a></li>
+
+
+                <!-- для внутренней
+                <li><a href="#"><span class="user-logout">Выйти</span> </a>
+                </li> -->
+
+
+
+              </ul>
             </li>
-            <!-- <li >  </li> -->
-            <li class="user-compare"> <a href="#"><img src="img/compare.svg" width="10px" height="10px" alt="иконка Сравнить"> <span>Сравнить</span></a>
-            </li>
-            <li><a class="user-cart" href="#"><img src="img/cart.svg" width="12px" height="12px" alt=""><span>Корзина</span> </a>
+
+            <li>
+              <ul class="user-compare-cart">
+                <li class="user-compare"> <a href="#"><img src="img/compare.svg" width="10px" height="10px" alt="иконка Сравнить"> <span>Сравнить</span></a>
+                </li>
+                <li><a class="user-cart" href="#"><img src="img/cart.svg" width="12px" height="12px" alt=""><span>Корзина</span> </a>
+                </li>
+              </ul>
             </li>
           </ul>
+
           <ul class="navig-servise">
-            <li class="catalog"><a href="">Каталог товаров</a>
+            <li class="catalog"><a href="">Каталог товаров</a><span><img src="img/plus.svg" width="16px" height="16px" alt="Раскрыть каталог"></span>
               <ul class="catalog-list">
                 <li><a href="#">Виртуальная реальность  </a></li>
                 <li><a href="#">Моноподы для селфи </a></li>
@@ -41,22 +57,113 @@
                 <li><a href="#">Квадрокоптеры</a> </li>
               </ul>
             </li>
-            <li class="delivery">
-              <a href="#">Доставка</a>
+
+            <li>
+              <ul class="delivery-guaranty">
+                <li class="delivery">
+                  <a href="#">Доставка</a>
+                </li>
+                <li class="guaranty" >
+                  <a href="#">Гарантия</a>
+                </li>
+              </ul>
             </li>
-            <li class="guaranty" >
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="contacts">Контакты</li>
+            <li class="contacts"><a href="#">Контакты</a></li>
           </ul>
         </nav>
-
 
       </header>
 
 
 
-      <main>
+<!-- ================================= слайдер ================================= -->
+
+      <main class="site-container">
+        <article class="slider">
+          <ul class="slider-list">
+            <li class="slide-item" id="slide-one">
+              <p class="slide-number">01</p>
+              <h3 class="slide-slogan">Делай селфи, как Бен Стиллер! </h3>
+              <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
+              <dl class="slide-specs">
+                <dt class="slide-specs-param">8,5 м</dt>
+                <dd class="slide-specs-character">Длина палки</dd>
+                <dt class="slide-specs-param">5 кг</dt>
+                <dd class="slide-specs-character">Вес палки</dd>
+                <dt class="slide-specs-param">Карбон</dt>
+                <dd class="slide-specs-character">Материал</dd>
+              </dl>
+              <a class="slide-button" href="">Подробнее</a>
+            </li>
+            <li class="slide-item" id="slide-two">
+              <p class="slide-number">02</p>
+              <h3 class="slide-slogan">Худеем  правильно!</h3>
+              <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету. </p>
+              <dl class="slide-specs">
+                <dt class="slide-specs-param">48 часов</dt>
+                <dd class="slide-specs-character">Без подзарядки</dd>
+              </dl>
+              <a class="slide-button" href="">Подробнее</a>
+            </li>
+            <li class="slide-item" id="slide-three">
+              <p class="slide-number">03</p>
+              <h3 class="slide-slogan">Порхает как бабочка, жалит как пчела!</h3>
+              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.  </p>
+              <dl class="slide-specs">
+                <dt class="slide-specs-param">800 м</dt>
+                <dd class="slide-specs-character">Дальность полета</dd>
+                <dt class="slide-specs-param">50 м</dt>
+                <dd class="slide-specs-character">Радиус поражения</dd>
+              </dl>
+              <a class="slide-button" href="">Подробнее</a>
+            </li>
+          </ul>
+          <div class="slider-control">
+            <label for="product-one"></label>
+            <label for="product-two"></label>
+            <label for="product-three"></label>
+
+          </div>
+        </article>
+        <!-- ================================= слайдер ================================= -->
+
+        <!-- ================================= популяные товары ================================= -->
+        <section class="popular-listing">
+          <section class="popular-goods">
+            <a href=""><img src="img/vr-glasses.svg" width="97px" height="55px" alt="Иконка очки">
+              <p class="category">Виртуальная реальность</p>
+            </a>
+          </section>
+          <section class="popular-goods">
+            <a href=""><img src="img/icon-monopod.svg" width="86px" height="117px" alt="Иконка монопод">
+              <p class="category">Моноподы для селфи</p>
+            </a>
+          </section>
+          <section class="popular-goods">
+            <a href=""><img src="img/icon-action.svg" width="72px" height="88px" alt="Иконка Экшн-камеры">
+              <p class="category">Экшн-камеры</p>
+            </a>
+          </section>
+          <section class="popular-goods">
+            <a href=""><img src="img/icon-fitness.svg" width="108px" height="66px" alt="Иконка Фитнес-браслеты">
+              <p class="category">Фитнес-браслеты</p>
+            </a>
+          </section>
+          <section class="popular-goods">
+            <a href=""><img src="iimg/icon-smart.svg" width="57px" height="98px" alt="Иконка Умные часы">
+              <p class="category">Умные часы</p>
+            </a>
+          </section>
+          <section class="popular-goods">
+            <a href=""><img src="img/icon-quadro.svg" width="133px" height="70px" alt="Квадрокоптеры">
+              <p class="category">Квадрокоптеры</p>
+            </a>
+          </section>
+        </section>
+        <!-- ================================= популяные товары ================================= -->
+
+
+
 
       </main>
 

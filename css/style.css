@@ -6,14 +6,14 @@
 
   @font-face {
     font-family: "gilroyextrabold";
-    src: url("fonts/gilroyextrabold-webfont.woff2") format('woff2');
+    src: url("../fonts/gilroyextrabold-webfont.woff2") format('woff2');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'gilroylight';
-    src: url('fonts/gilroylight-webfont.woff2') format('woff2');
+    src: url("../fonts/gilroylight-webfont.woff2") format('woff2');
     font-weight: normal;
     font-style: normal;
   }
@@ -76,25 +76,30 @@
   top: -18px;
 }
 
-.logo-device:hover {
+/* .logo-device:hover {
   opacity: 0.6;
 }
 
 .logo-device:active {
   opacity: 0.3;
-}
+} */
 
 /* ================================стили для навигации=============================== */
 
 
 
 .user-navigation,
-.navig-servise,
-.catalog-list {
+.catalog-list,
+.delivery-guaranty {
   display: flex;
 
   list-style: none;
   padding: 0;
+}
+
+
+.delivery-guaranty {
+  justify-content: flex-end;
 }
 
 .site-navigation a {
@@ -103,6 +108,7 @@
 
 .user-navigation {
   padding-top: 42px;
+  padding-bottom: 23px;
 
   font-family: "OpenSans-Light";
   font-size: 15px;
@@ -110,37 +116,21 @@
   letter-spacing: 0.15px;
   line-height: 30px;
 
-  /* justify-content: space-between; */
+  justify-content: flex-start;
 }
 
-.navig-servise {
-  padding-top: 40px;
-  padding-bottom: 163px;
 
-  font-family: "gilroyextrabold";
-  font-size: 18px;
-  /* color: #000000; */
-  letter-spacing: 3.6px;
-  line-height: 24px;
+.user-navigation a:hover {
+opacity: 0.6;
 }
 
-.catalog-list {
-  font-family: "OpenSans-Light";
-  font-size: 15px;
-  /* color: #000000; */
-  letter-spacing: 0.15px;
-  line-height: 36px;
-
-  padding: 0;
-}
-
-.user-navigation li {
-  text-align: left;
-  vertical-align: middle;
+.user-navigation a:active {
+  opacity: 0.3;
 }
 
 .search {
-  width: 540px;
+  width: 520px;
+  margin-right: 20px;
 }
 
 .search input {
@@ -152,25 +142,118 @@
   opacity: 0.3;
 }
 
-.user-login{
+.user-login-logout {
+  padding: 0;
+  margin-right: 20px;
   width: 260px;
+  display: flex;
+  justify-content: flex-start;
+
+  list-style: none;
+}
+
+.user-login {
+  width: 180px;
 }
 
 .user-login span {
-  padding-left: 14px;
+  /* width: 180px; */
+  padding-left: 10px;
 }
 
 .user-logout {
-  padding-left: 20px;
   opacity: 0.3;
 }
 
-.user-compare,
-.user-cart {
-  width: 100px;
+.user-compare-cart {
+  padding: 0;
+
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
 }
 
-.user-compare span,
+/* .user-compare,
+.user-cart {
+  padding: 0;
+  width: 100px;
+} */
+
+.user-compare {
+  padding-left: 7px;
+}
+
+.user-compare span {
+  padding-left: 7px;
+}
+
 .user-cart span {
   padding-left: 11px;
 }
+
+/* ========================= каталог товаров ===== доставка и т.д.================== */
+
+.navig-servise {
+  padding: 0;
+padding-bottom: 162px;
+
+  /* для внутренней
+  padding-bottom: 49px; */
+
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  text-transform: uppercase;
+
+  /* color: #000000; */
+  letter-spacing: 3.6px;
+  line-height: 24px;
+
+  display: flex;
+  justify-content: flex-start;
+
+  list-style: none;
+}
+
+.navig-servise a:hover {
+  opacity: 0.6;
+}
+
+.navig-servise a:active {
+  opacity: 0.3;
+}
+
+.catalog {
+  width: 540px;
+  position: relative;
+}
+
+.catalog img {
+  padding-left: 14px;
+  opacity: 0.3;
+}
+
+.catalog-list {
+  font-family: "OpenSans-Light";
+  font-size: 15px;
+  /* color: #000000; */
+  letter-spacing: 0.15px;
+  line-height: 36px;
+
+  padding: 0;
+  display: none;
+}
+
+.delivery,
+.guaranty {
+  margin-right: 34px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+/* ====================================== шапка закончилась ====================================== */
+
+/* ====================================== слайдер ====================================== */
