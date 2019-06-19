@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="7px" viewBox="0 0 100 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Layer 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="600" y="243" width="100" height="7" id="rect-1"></rect>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-740.000000, -265.000000)">
+            <g id="header-main" transform="translate(140.000000, 22.000000)">
+                <g id="Layer-6">
+                    <image x="600" y="243" width="100" height="7" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAHCAYAAAD+guigAAABc2lDQ1BJQ0MgUHJvZmlsZQAAKJF9kE0rRGEUx38zg5GXJJJkccuwQowSOzMWUhbTGOVtc+eaFzVz3e7cychW2VgoC7HxtvAFxFZZK0WkZOMbEBvpOo+h8VJOnc6v/3POec454A3olpUp64Gs6djRkbA2OTWt+R+ooIF6fDTpRs4KRSJjiH3Fn/ZyjUfFyy7V6+/7v1Y9l8gZ4KkU7jcs2xEeEm5bdCzFc8KNtgwlXFCcKvKa4niRdz9yYtFh4SNhzUjrUue5Eu400nYWvOqvQPxbTuobZzN543MetUlNwpwYl9gi3kqOKCOE0YiTZ54MDl0STXASBUcVDS9YS/Z8Ku1oIblAQhs1je5OLdjTOwjqnr/vVNIWZPaBZ/Ctl7T4JpysQvNtSQvsQN0KHJ9Zuq1/SD5xbzIJj4dQOwUNF1A1k0v2BYub1ISh/N51n9rBvwFv6677uue6b/tSfAenZvE2n704uIHYMoydw9Y2dEjvutl3XshnMEGtXbgAAAA1SURBVEgN7ZNBDQAACITU/p1PZwoeXAIG2rmVwxgYDIkgb8AgsEMwiEFgBmA4fohBYAZgOAsAegQKxQruXgAAAABJRU5ErkJggg=="></image>
+                    <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
