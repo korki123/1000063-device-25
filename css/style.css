@@ -388,7 +388,7 @@ padding-bottom: 162px;
 
 .specs {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .slide-specs,
