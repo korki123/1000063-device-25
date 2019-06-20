@@ -76,14 +76,18 @@
 
 
 
-<!-- ================================= слайдер ================================= -->
+<!-- ================================== слайдер ================================== -->
 
       <main class="site-container">
         <article class="slider">
-          <label for="slide-one"></label>
-          <label for="slide-two"></label>
-          <label for="slide-three"></label>
-
+          <input class="visually-hidden" type="radio" id="product-one" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-two" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-three" name="toggle">
+          <div class="slider-control">
+            <label for="product-one"></label>
+            <label for="product-two"></label>
+            <label for="product-three"></label>
+          </div>
           <ul class="slider-list">
             <li class="slide-item" id="one">
               <div class="wrapper-foto"><img src="img/slider-1.png" width="384px" height="486px" alt="Монопод">
@@ -97,6 +101,9 @@
                 <h3 class="slide-slogan">Делай селфи, <br> как Бен Стиллер! </h3>
                 <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
 
+                <div class="slide-button">
+                  <a href=""></a>
+                </div>
                 <div class="specs">
                   <dl class="slide-specs">
                     <dt class="slide-specs-param">8,5 м</dt>
@@ -111,50 +118,61 @@
                     <dd class="slide-specs-character">Материал</dd>
                   </dl>
                 </div>
-                <a class="slide-button" href="">Подробнее</a>
               </div>
             </li>
 
             <li class="slide-item" id="two">
-              <div class="wrapper-foto">
-                <p class="slide-number">02</p>
-                <h3 class="slide-slogan">Худеем  правильно!</h3>
+              <div class="wrapper-foto"><img src="img/slider-2.png" width="345px" height="485px" alt="Фитнес-браслет">
+              </div>
+              <div class="wrapper-text">
+                <div class="wrapper-number">
+                  <div class="line"></div>
+                  <p class="slide-number">02</p>
+                </div>
+                <h3 class="slide-slogan">Худеем <br> правильно!</h3>
                 <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету. </p>
-                <dl class="slide-specs">
-                  <dt class="slide-specs-param">48 часов</dt>
-                  <dd class="slide-specs-character">Без подзарядки</dd>
-                </dl>
-                <a class="slide-button" href="">Подробнее</a>
-                ки</dd>
-              </dl>
-              <a class="slide-button" href="">Подробнее</a>
-            </div>
-          </li>
+
+                <div class="slide-button">
+                  <a href=""></a>
+                </div>
+                <div class="specs">
+                  <dl class="slide-specs">
+                    <dt class="slide-specs-param">48 часов</dt>
+                    <dd class="slide-specs-character">Без подзарядки</dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
 
             <li class="slide-item" id="three">
-              <div class="wrapper-foto">
+              <div class="wrapper-foto"><img src="img/slider-3.png" width="384px" height="486px" alt="Квадрокоптер">
               </div>
 
               <div class="wrapper-text">
-              <p class="slide-number">03</p>
-              <h3 class="slide-slogan">Порхает как бабочка, жалит как пчела!</h3>
-              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.  </p>
-              <dl class="slide-specs">
-                <dt class="slide-specs-param">800 м</dt>
-                <dd class="slide-specs-character">Дальность полета</dd>
-                <dt class="slide-specs-param">50 м</dt>
-                <dd class="slide-specs-character">Радиус поражения</dd>
-              </dl>
-              <a class="slide-button" href="">Подробнее</a>
-            </div>
-            </li>
-          </ul>
-          <div class="slider-control">
-            <label for="product-one"></label>
-            <label for="product-two"></label>
-            <label for="product-three"></label>
+                <div class="wrapper-number">
+                  <div class="line"></div>
+                  <p class="slide-number">03</p>
+                </div>
+                <h3 class="slide-slogan">Порхает как бабочка,  жалит как пчела!</h3>
+                <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру. </p>
 
-          </div>
+                <div class="slide-button">
+                  <a href=""></a>
+                </div>
+                <div class="specs">
+                  <dl class="slide-specs">
+                    <dt class="slide-specs-param">800 м</dt>
+                    <dd class="slide-specs-character">Дальность полета</dd>
+                  </dl>
+                  <dl class="slide-specs">
+                    <dt class="slide-specs-param">50 м</dt>
+                    <dd class="slide-specs-character">Радиус поражения</dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+
+          </ul>
         </article>
         <!-- ================================= слайдер ================================= -->
 

@@ -268,22 +268,32 @@ padding-bottom: 162px;
 
 .slider {
   font-family: gilroyextrabold, Arial, sans-serif;
+  position: relative;
 }
 
 .slider-list {
   margin: 0;
   padding: 0;
 }
+
+
+/* ==================скроем на время ========================= */
+
+.slide-item {
+  display: none;
+}
+
+/* ==================скроем на время ========================= */
+
 .slide-item {
   position: relative;
   margin-top:-140px;
 }
 .wrapper-foto {
   width: 50%;
-}
-
-.wrapper-foto > img{
-  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 14px;
 }
 
 
@@ -298,8 +308,7 @@ padding-bottom: 162px;
   top: 0;
 
   box-sizing: border-box;
-  padding-left: 25px;
-
+  padding-left: 20px;
 }
 
 .wrapper-number {
@@ -329,27 +338,63 @@ padding-bottom: 162px;
   margin-top: -84px;
   font-size: 47px;
   line-height: 56px;
-  padding-bottom: 2px;
+  padding-bottom: 15px;
 
 }
 
 .slide-description {
+  margin: 0;
   font-family: OpenSans-Light, Arial, sans-serif;
   font-size: 15px;
   color: #464646;
   line-height: 30px;
 
-  padding-bottom: 130px;
+  padding-bottom: 42px;
 }
+/* ==================================кнопка подробнее на слайдере=============================== */
+.slide-button {
+  position: relative;
+  padding-bottom: 90px;
+}
+
+
+.slide-button a::before {
+  content: "Подробнее";
+
+  background-image: linear-gradient(
+    180deg,
+    transparent 16px,
+    #F0C52E 16px,
+    #F0C52E 24px,
+    transparent 24px,
+    transparent 40px);
+
+  font-family: Gilroy-ExtraBold;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 3.5px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+
+  padding-left: 42px;
+  padding-right: 42px;
+
+  position: absolute;
+}
+
+/* ==================================кнопка подробнее на слайдере=============================== */
+
 
 .specs {
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .slide-specs,
 .slide-specs-character {
   margin: 0;
-  padding-right: 80px;
+
 }
 
 .slide-specs {
@@ -357,6 +402,15 @@ padding-bottom: 162px;
   font-size: 36px;
   line-height: 48px;
   padding-bottom: 8px;
+  margin-right: 79px;
+}
+
+.slide-specs:last-child {
+  margin-right: 0;
+}
+
+.slide-specs-param {
+  padding-bottom: 9px;
 }
 
 .slide-specs-character {
@@ -364,4 +418,41 @@ padding-bottom: 162px;
   font-size: 13px;
   color: #464646;
   line-height: 20px;
+}
+
+/* ================================== переключатель ================================== */
+
+.slider-control {
+  position: absolute;
+
+  bottom: 149px;
+  right: 22px;
+
+  z-index: 5;
+}
+
+.slider-control label {
+  display: inline-block;
+
+  width: 11px;
+  height: 11px;
+
+  border: 1px solid #000000;
+  border-radius: 50%;
+
+  margin-left: 17px;
+
+  cursor: pointer;
+}
+
+#product-one:checked ~ .slider-list #one,
+#product-two:checked ~ .slider-list #two,
+#product-three:checked ~ .slider-list#three {
+  display: block;
+}
+
+#product-one:checked ~ .slider label[for product-one],
+#product-two:checked ~ .slider label[for product-two],
+#product-three:checked ~ .slider label[for product-three] {
+  border: 1px duble #000000;
 }
