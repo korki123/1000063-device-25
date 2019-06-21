@@ -294,6 +294,8 @@ padding-bottom: 162px;
   padding-left: 30px;
   padding-right: 20px;
   padding-top: 14px;
+
+  min-height: 486px;
 }
 
 
@@ -316,12 +318,15 @@ padding-bottom: 162px;
   justify-content: space-between;
 }
 
-.line {
+.wrapper-number::before {
+  content: "";
+
   width: 100px;
   height: 7px;
   background-color: red;
 
-  margin-top: 52px;
+  margin-top: 46px;
+
 }
 
 .slide-number {
@@ -335,7 +340,7 @@ padding-bottom: 162px;
 
 .slide-slogan {
   margin: 0;
-  margin-top: -84px;
+  margin-top: -86px;
   font-size: 47px;
   line-height: 56px;
   padding-bottom: 15px;
@@ -350,6 +355,7 @@ padding-bottom: 162px;
   line-height: 30px;
 
   padding-bottom: 42px;
+  padding-right: 25px;
 }
 /* ==================================кнопка подробнее на слайдере=============================== */
 .slide-button {
@@ -434,25 +440,31 @@ padding-bottom: 162px;
 .slider-control label {
   display: inline-block;
 
-  width: 11px;
-  height: 11px;
-
-  border: 1px solid #000000;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 1.043A4.962 4.962 0 0 1 10.957 6 4.962 4.962 0 0 1 6 10.957 4.962 4.962 0 0 1 1.043 6 4.962 4.962 0 0 1 6 1.043zM6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0z' fill='%23000' fill-rule='nonzero'/%3E%3C/svg%3E");
 
   margin-left: 17px;
 
   cursor: pointer;
 }
 
+#product-one:checked ~ .slider-control label:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-rule='nonzero'%3E%3Cpath d='M6 1.043A4.962 4.962 0 0 1 10.957 6 4.962 4.962 0 0 1 6 10.957 4.962 4.962 0 0 1 1.043 6 4.962 4.962 0 0 1 6 1.043zM6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0z'/%3E%3Cpath d='M6 4.719c.707.001 1.28.574 1.281 1.281A1.283 1.283 0 0 1 6 7.281 1.283 1.283 0 0 1 4.719 6 1.283 1.283 0 0 1 6 4.719zm0-1.027a2.308 2.308 0 1 0 0 4.616 2.308 2.308 0 0 0 0-4.616z'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: red;
+}
+
+
+
+
 #product-one:checked ~ .slider-list #one,
 #product-two:checked ~ .slider-list #two,
-#product-three:checked ~ .slider-list#three {
+#product-three:checked ~ .slider-list #three {
   display: block;
 }
 
 #product-one:checked ~ .slider label[for product-one],
 #product-two:checked ~ .slider label[for product-two],
 #product-three:checked ~ .slider label[for product-three] {
-  border: 1px duble #000000;
 }
