@@ -1,55 +1,55 @@
-  body {
-    margin: 0;
+body {
+  margin: 0;
 
-    font-family: "Open Sans", Arial, sans-serif;
-  }
+  font-family: "Open Sans", Arial, sans-serif;
+}
 
-  @font-face {
-    font-family: "gilroyextrabold";
-    src: url("../fonts/gilroyextrabold-webfont.woff2") format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url("../fonts/gilroyextrabold-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'gilroylight';
-    src: url("../fonts/gilroylight-webfont.woff2") format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'gilroylight';
+  src: url("../fonts/gilroylight-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .centred {
-    width: 1440px;
-    margin: 0 auto;
-    /* box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2); */
-  }
+.centred {
+  width: 1440px;
+  margin: 0 auto;
+  /* box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2); */
+}
 
-  .visually-hidden:not(:focus):not(:active),
-  input[type="checkbox"].visually-hidden,
-  input[type="radio"].visually-hidden {
-    position: absolute;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 /* =================================== Шапка на главной===================================*/
 
 .index-heder {
@@ -64,7 +64,7 @@
 
   position: relative;
 
-  background-color: #F0C52E;
+  background-color: rgba(240, 197, 46, 0.5);
 
   list-style: none;
 }
@@ -77,11 +77,11 @@
 }
 
 /* .logo-device:hover {
-  opacity: 0.6;
+opacity: 0.6;
 }
 
 .logo-device:active {
-  opacity: 0.3;
+opacity: 0.3;
 } */
 
 /* ================================стили для навигации=============================== */
@@ -110,8 +110,9 @@
   padding-top: 42px;
   padding-bottom: 23px;
 
-  font-family: "OpenSans-Light";
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.15px;
   line-height: 30px;
@@ -121,7 +122,7 @@
 
 
 .user-navigation a:hover {
-opacity: 0.6;
+  opacity: 0.6;
 }
 
 .user-navigation a:active {
@@ -135,7 +136,7 @@ opacity: 0.6;
 
 .search input {
   padding: 0;
-  background-color: #F0C52E;
+  background-color: transparent;
   border-width: 0;
   padding-left: 20px;
 
@@ -177,8 +178,8 @@ opacity: 0.6;
 
 /* .user-compare,
 .user-cart {
-  padding: 0;
-  width: 100px;
+padding: 0;
+width: 100px;
 } */
 
 .user-compare {
@@ -197,7 +198,7 @@ opacity: 0.6;
 
 .navig-servise {
   padding: 0;
-padding-bottom: 162px;
+  padding-bottom: 162px;
 
   /* для внутренней
   padding-bottom: 49px; */
@@ -256,18 +257,22 @@ padding-bottom: 162px;
 
 /* ====================================== шапка закончилась ====================================== */
 
-.site-container {
-  width: 1040px;
-  padding-left: 60px;
-  padding-right: 60px;
+/* .site-container {
+  width: 1160px;
+  padding: 0px 20px;
   margin: 0 auto;
-
-}
+} */
 
 /* ====================================== слайдер ====================================== */
 
 .slider {
   font-family: gilroyextrabold, Arial, sans-serif;
+  width: 1060px;
+  min-height: 504px;
+  margin: 0 auto;
+
+  /* padding: 0 50px 99px; */
+  padding-bottom: 102px;
   position: relative;
 }
 
@@ -276,23 +281,28 @@ padding-bottom: 162px;
   padding: 0;
 }
 
+/* ============================== на время прячем слайды ============================== */
+/* .slide-item {
+display: none;
+} */
 
-/* ==================скроем на время ========================= */
+/* ============================== на время прячем слайды ============================== */
 
-.slide-item {
-  display: none;
-}
-
-/* ==================скроем на время ========================= */
 
 .slide-item {
   position: relative;
   margin-top:-140px;
+  display: none;
 }
-.wrapper-foto {
+
+.wrapper-slide {
+  display: flex;
+}
+
+
+.wrapper-photo {
   width: 50%;
-  padding-left: 30px;
-  padding-right: 20px;
+  padding-left: 47px;
   padding-top: 14px;
 
   min-height: 486px;
@@ -302,15 +312,13 @@ padding-bottom: 162px;
 .wrapper-text {
   width: 50%;
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 
-  position: absolute;
   right: 0;
   top: 0;
 
   box-sizing: border-box;
-  padding-left: 20px;
 }
 
 .wrapper-number {
@@ -332,8 +340,8 @@ padding-bottom: 162px;
 .slide-number {
   margin: 0;
 
-  font-size: 179.2px;
-  line-height: 179.2px;
+  font-size: 179px;
+  line-height: 180px;
 
   color: red;
 }
@@ -343,8 +351,7 @@ padding-bottom: 162px;
   margin-top: -86px;
   font-size: 47px;
   line-height: 56px;
-  padding-bottom: 15px;
-
+  padding-bottom: 18px;
 }
 
 .slide-description {
@@ -354,13 +361,14 @@ padding-bottom: 162px;
   color: #464646;
   line-height: 30px;
 
-  padding-bottom: 42px;
+  padding-bottom: 44px;
   padding-right: 25px;
 }
 /* ==================================кнопка подробнее на слайдере=============================== */
 .slide-button {
   position: relative;
   padding-bottom: 90px;
+  padding-left: 4px;
 }
 
 
@@ -368,14 +376,14 @@ padding-bottom: 162px;
   content: "Подробнее";
 
   background-image: linear-gradient(
-    180deg,
-    transparent 16px,
-    #F0C52E 16px,
-    #F0C52E 24px,
-    transparent 24px,
-    transparent 40px);
+  180deg,
+  transparent 16px,
+  #F0C52E 16px,
+  #F0C52E 24px,
+  transparent 24px,
+  transparent 40px);
 
-  font-family: Gilroy-ExtraBold;
+  font-family: gilroyextrabold, Arial, sans-serif;
   font-size: 18px;
   color: #000000;
   letter-spacing: 3.5px;
@@ -389,7 +397,17 @@ padding-bottom: 162px;
   position: absolute;
 }
 
-/* ==================================кнопка подробнее на слайдере=============================== */
+.slide-button a:hover::before {
+  background-color: #F0C52E;
+}
+
+.slide-button a:active::before {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+  /* ==================================кнопка подробнее на слайдере=============================== */
 
 
 .specs {
@@ -426,15 +444,14 @@ padding-bottom: 162px;
   line-height: 20px;
 }
 
-/* ================================== переключатель ================================== */
+  /* ================================== переключатель ================================== */
 
 .slider-control {
+  list-style: none;
   position: absolute;
 
-  bottom: 149px;
-  right: 22px;
-
-  z-index: 5;
+  bottom: 250px;
+  right: 26px;
 }
 
 .slider-control label {
@@ -450,11 +467,15 @@ padding-bottom: 162px;
   cursor: pointer;
 }
 
-#product-one:checked ~ .slider-control label:checked {
+.slider-control label:hover  {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-rule='nonzero'%3E%3Cpath d='M6 1.043A4.962 4.962 0 0 1 10.957 6 4.962 4.962 0 0 1 6 10.957 4.962 4.962 0 0 1 1.043 6 4.962 4.962 0 0 1 6 1.043zM6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0z'/%3E%3Cpath d='M6 4.719c.707.001 1.28.574 1.281 1.281A1.283 1.283 0 0 1 6 7.281 1.283 1.283 0 0 1 4.719 6 1.283 1.283 0 0 1 6 4.719zm0-1.027a2.308 2.308 0 1 0 0 4.616 2.308 2.308 0 0 0 0-4.616z'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.6;
+}
+
+input.products:checked ~ .slider-control label {
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-rule='nonzero'%3E%3Cpath d='M6 1.043A4.962 4.962 0 0 1 10.957 6 4.962 4.962 0 0 1 6 10.957 4.962 4.962 0 0 1 1.043 6 4.962 4.962 0 0 1 6 1.043zM6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0z'/%3E%3Cpath d='M6 4.719c.707.001 1.28.574 1.281 1.281A1.283 1.283 0 0 1 6 7.281 1.283 1.283 0 0 1 4.719 6 1.283 1.283 0 0 1 6 4.719zm0-1.027a2.308 2.308 0 1 0 0 4.616 2.308 2.308 0 0 0 0-4.616z'/%3E%3C/g%3E%3C/svg%3E");
   background-color: red;
 }
-
 
 
 
@@ -467,4 +488,214 @@ padding-bottom: 162px;
 #product-one:checked ~ .slider label[for product-one],
 #product-two:checked ~ .slider label[for product-two],
 #product-three:checked ~ .slider label[for product-three] {
+}
+
+
+
+  /* ============================== популяные товары ============================== */
+
+.popular-listing {
+  width: 1160px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 130px;
+}
+
+.popular-goods {
+  width: 160px;
+  margin-right: 40px;
+}
+
+.popular-goods:nth-child(2) .wrapper-img {
+  padding-top: 44px;
+}
+
+.popular-goods:nth-child(6n) {
+  margin-right: 0;
+}
+
+
+
+.image-icon {
+  height: 160px;
+  background-color: rgba(240, 197, 46, 0.5);
+  display: flex;
+  margin-bottom: 33px;
+}
+
+.goods-link:hover .image-icon {
+  background-color: #F0C52E;
+}
+
+.goods-link:active .wrapper-img,
+.goods-link:active .category {
+  opacity: 0.3;
+}
+
+.goods-link:active .image-icon {
+  background-color: #F0C52E;
+}
+
+
+
+  /* .image-icon:hover {
+  background-color: #F0C52E;
+}
+
+.wrapper-img:active {
+opacity: 0.3;
+}
+*/
+
+.wrapper-img {
+  margin: auto;
+}
+
+
+.popular-goods a{
+  margin: 0;
+}
+
+a .category {
+  font-family: gilroyextrabold, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+
+/* ================================= слайдер доставка =================================  */
+
+.servise {
+  width: 1440px;
+  font-family: gilroyextrabold, Arial, sans-serif;
+  background-image: linear-gradient(
+    180deg,
+    #ffffff 33px,
+    #E5E5E5 33px);
+}
+
+
+.main-servise {
+  width: 1160px;
+  margin-left: 542px;
+  padding-bottom: 127px;
+}
+
+.main-servise::after {
+  content: "";
+
+  height: 319px;
+  width: 7px;
+  background-color: #000000;
+  position: absolute;
+
+  left: 417px;
+  bottom: -829px;
+
+}
+/* ================================= радиокнопки доставка старт =================================  */
+
+.servise-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  margin-left: 140px;
+  padding-top: 13px;
+  }
+
+
+.wrapper-servise-part {
+  display: none;
+}
+
+.wrapper-servise-part:first-child {
+  display: block;
+}
+
+.servise-radio-button {
+  min-width: 160px;
+  margin-bottom: 25px;
+
+  background-image: linear-gradient(
+  180deg,
+   transparent 16px,
+  #F0C52E 16px,
+  #F0C52E 24px,
+  transparent 24px);
+
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.servise-radio-button:hover {
+  background-color: #F0C52E;
+}
+
+.servise-radio-button:checked ~ label {
+  width: 278px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+.servise-radio-button label {
+  font-family: gilroyextrabold, Arial, sans-serif;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 3.5px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+
+  padding-left: 3px;
+
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* ================================= радиокнопки доставка финиш =================================  */
+
+.servise-part {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wrapper-delivery {
+  width: 460px;
+}
+
+.wrapper-delivery h3 {
+  font-size: 47px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 11px;
+}
+
+.wrapper-delivery p {
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+}
+
+.icon-servise {
+  width: 172px;
+  height: 194px;
+  margin-left: 124px;
+}
+
+.icon-servise img {
+  margin-left: -28px;
+  padding-top: 17px;
 }

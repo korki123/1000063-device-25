@@ -17,88 +17,89 @@
         <nav class="site-navigation">
           <ul class="user-navigation">
             <li class="logo-device">
-              <a href=""><img src="img/logo-device.svg" width="164px" height="36px" alt="Логотип Девайса"></a>
+              <a href=""><img src="img/logo-device.svg" width="164" height="36" alt="Логотип Девайса"></a>
             </li>
-            <li class="search"><img src="img/search.svg" width="16px" height="16px" alt="иконка Поиск"><input type="search" name="" value="Поиск по сайту">
+            <li class="search"><img src="img/search.svg" width="16" height="16" alt="иконка Поиск"><input type="search" name="search" value="Поиск по сайту">
             </li>
 
             <li>
               <ul class="user-login-logout">
-                <li class="user-login"><a href="#"><img src="img/user.svg" width="13px" height="12px" alt="иконка Посетитель"> <span>Войти</span></a></li>
+                <li class="user-login"><a href="#"><img src="img/user.svg" width="13" height="12" alt="иконка Посетитель"> <span>Войти</span></a></li>
 
 
                 <!-- для внутренней
                 <li><a href="#"><span class="user-logout">Выйти</span> </a>
-                </li> -->
+              </li> -->
 
 
 
-              </ul>
-            </li>
+            </ul>
+          </li>
 
-            <li>
-              <ul class="user-compare-cart">
-                <li class="user-compare"> <a href="#"><img src="img/compare.svg" width="10px" height="10px" alt="иконка Сравнить"> <span>Сравнить</span></a>
-                </li>
-                <li><a class="user-cart" href="#"><img src="img/cart.svg" width="12px" height="12px" alt=""><span>Корзина</span> </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <li>
+            <ul class="user-compare-cart">
+              <li class="user-compare"> <a href="#"><img src="img/compare.svg" width="10" height="10" alt="иконка Сравнить"> <span>Сравнить</span></a>
+              </li>
+              <li><a class="user-cart" href="#"><img src="img/cart.svg" width="12" height="12" alt=""><span>Корзина</span> </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
 
-          <ul class="navig-servise">
-            <li class="catalog"><a href="#">Каталог товаров</a><img src="img/plus.svg" width="16px" height="16px" alt="Раскрыть каталог">
-              <ul class="catalog-list">
-                <li><a href="#">Виртуальная реальность  </a></li>
-                <li><a href="#">Моноподы для селфи </a></li>
-                <li><a href="#">Экшн-камеры</a> </li>
-                <li><a href="#">Фитнес-браслеты  </a> </li>
-                <li><a href="#">Умные часы</a> </li>
-                <li><a href="#">Квадрокоптеры</a> </li>
-              </ul>
-            </li>
+        <ul class="navig-servise">
+          <li class="catalog"><a href="#">Каталог товаров</a><img src="img/plus.svg" width="16" height="16" alt="Раскрыть каталог">
+            <ul class="catalog-list">
+              <li><a href="#">Виртуальная реальность  </a></li>
+              <li><a href="#">Моноподы для селфи </a></li>
+              <li><a href="#">Экшн-камеры</a> </li>
+              <li><a href="#">Фитнес-браслеты  </a> </li>
+              <li><a href="#">Умные часы</a> </li>
+              <li><a href="#">Квадрокоптеры</a> </li>
+            </ul>
+          </li>
 
-            <li>
-              <ul class="delivery-guaranty">
-                <li class="delivery">
-                  <a href="#">Доставка</a>
-                </li>
-                <li class="guaranty" >
-                  <a href="#">Гарантия</a>
-                </li>
-              </ul>
-            </li>
-            <li class="contacts"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
+          <li>
+            <ul class="delivery-guaranty">
+              <li class="delivery">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="guaranty" >
+                <a href="#">Гарантия</a>
+              </li>
+            </ul>
+          </li>
+          <li class="contacts"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-      </header>
 
 
-
-<!-- ================================== слайдер ================================== -->
+  <!-- ================================== слайдер ================================== -->
 
       <main class="site-container">
         <article class="slider">
-          <input class="visually-hidden" type="radio" id="product-one" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product-two" name="toggle">
-          <input class="visually-hidden" type="radio" id="product-three" name="toggle">
+          <input class="visually-hidden" type="radio" class="products" id="product-one" name="toggle" checked>
+          <input class="visually-hidden" type="radio" class="products" id="product-two" name="toggle">
+          <input class="visually-hidden" type="radio" class="products" id="product-three" name="toggle">
           <!-- <div class="slider-control">
             <label for="product-one"></label>
             <label for="product-two"></label>
             <label for="product-three"></label>
           </div> -->
           <ul class="slider-list">
-            
-            <div class="slider-control">
-              <label for="product-one"></label>
-              <label for="product-two"></label>
-              <label for="product-three"></label>
-            </div>
+
+            <li class="slider-control">
+                <label for="product-one"></label>
+                <label for="product-two"></label>
+                <label for="product-three"></label>
+            </li>
 
             <li class="slide-item" id="one">
-              <div class="wrapper-foto"><img src="img/slider-1.png" width="384px" height="486px" alt="Монопод">
-              </div>
+              <div class="wrapper-slide">
+                <div class="wrapper-photo"><img src="img/slider-1.png" width="384" height="486" alt="Монопод">
+                </div>
 
               <div class="wrapper-text">
                 <div class="wrapper-number">
@@ -125,10 +126,13 @@
                   </dl>
                 </div>
               </div>
+
+              </div>
             </li>
 
             <li class="slide-item" id="two">
-              <div class="wrapper-foto"><img src="img/slider-2.png" width="345px" height="485px" alt="Фитнес-браслет">
+              <div class="wrapper-slide">
+                  <div class="wrapper-photo"><img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
               </div>
               <div class="wrapper-text">
                 <div class="wrapper-number">
@@ -147,10 +151,13 @@
                   </dl>
                 </div>
               </div>
+
+              </div>
             </li>
 
             <li class="slide-item" id="three">
-              <div class="wrapper-foto"><img src="img/slider-3.png" width="384px" height="486px" alt="Квадрокоптер">
+              <div class="wrapper-slide">
+                  <div class="wrapper-photo"><img src="img/slider-3.png" width="384" height="486" alt="Квадрокоптер">
               </div>
 
               <div class="wrapper-text">
@@ -174,6 +181,8 @@
                   </dl>
                 </div>
               </div>
+
+              </div>
             </li>
 
           </ul>
@@ -181,41 +190,132 @@
         <!-- ================================= слайдер ================================= -->
 
         <!-- ================================= популяные товары ================================= -->
-        <section class="popular-listing">
+        <section class="popular-listing centred">
           <section class="popular-goods">
-            <a href=""><img src="img/vr-glasses.svg" width="97px" height="55px" alt="Иконка очки">
+            <a class="goods-link" href="">
+            <div class="image-icon">
+              <div class="wrapper-img">
+              <img src="img/vr-glasses.svg" width="97" height="55" alt="Иконка очки">
+
+              </div>
+            </div>
               <p class="category">Виртуальная реальность</p>
             </a>
           </section>
           <section class="popular-goods">
-            <a href=""><img src="img/icon-monopod.svg" width="86px" height="117px" alt="Иконка монопод">
+            <a class="goods-link" href="">
+              <div class="image-icon">
+                <div class="wrapper-img">
+                <img src="img/icon-monopod.svg" width="86" height="117" alt="Иконка монопод">
+                </div>
+              </div>
               <p class="category">Моноподы для селфи</p>
             </a>
           </section>
           <section class="popular-goods">
-            <a href=""><img src="img/icon-action.svg" width="72px" height="88px" alt="Иконка Экшн-камеры">
+            <a class="goods-link" href="">
+              <div class="image-icon">
+                <div class="wrapper-img">
+                <img src="img/icon-action.svg" width="72" height="88" alt="Иконка Экшн-камеры">
+                </div>
+              </div>
               <p class="category">Экшн-камеры</p>
             </a>
           </section>
           <section class="popular-goods">
-            <a href=""><img src="img/icon-fitness.svg" width="108px" height="66px" alt="Иконка Фитнес-браслеты">
+            <a class="goods-link" href="">
+              <div class="image-icon">
+                <div class="wrapper-img">
+                  <img src="img/icon-fitness.svg" width="108" height="66" alt="Иконка Фитнес-браслеты">
+
+                </div>
+              </div>
               <p class="category">Фитнес-браслеты</p>
             </a>
           </section>
           <section class="popular-goods">
-            <a href=""><img src="iimg/icon-smart.svg" width="57px" height="98px" alt="Иконка Умные часы">
+            <a class="goods-link" href="">
+              <div class="image-icon">
+                <div class="wrapper-img">
+                  <img src="img/icon-smart.svg" width="57" height="98" alt="Иконка Умные часы">
+
+                </div>
+              </div>
               <p class="category">Умные часы</p>
             </a>
           </section>
           <section class="popular-goods">
-            <a href=""><img src="img/icon-quadro.svg" width="133px" height="70px" alt="Квадрокоптеры">
+            <a class="goods-link" href="">
+              <div class="image-icon">
+                <div class="wrapper-img">
+                <img src="img/icon-quadro.svg" width="132" height="69" alt="Квадрокоптеры">
+
+                </div>
+              </div>
               <p class="category">Квадрокоптеры</p>
             </a>
           </section>
         </section>
         <!-- ================================= популяные товары ================================= -->
 
+        <!-- ================================= слайдер доставка ================================= -->
+        <section class="servise">
+          <input class="visually-hidden" type="radio" name="servise" id="radio-delivery" checked>
+          <input class="visually-hidden" type="radio" name="servise" id="radio-warranty">
+          <input class="visually-hidden" type="radio" name="servise" id="radio-credit">
 
+          <div class="servise-wrapper">
+            <div class="servise-radio-button">
+              <label for="radio-delivery">Доставка</label>
+            </div>
+            <div class="servise-radio-button">
+              <label for="radio-warranty">Гарантия</label>
+            </div>
+            <div class="servise-radio-button">
+              <label for="radio-credit">Кредит</label>
+            </div>
+          </div>
+          <div class="main-servise centred" >
+
+            <div class="wrapper-servise-part">
+              <div class="servise-part" id="part-delivery">
+                <div class="wrapper-delivery">
+                  <h3>Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </div>
+                <div class="icon-servise">
+                  <img src="img/run-man.svg" width="139" height="165" alt="картинка доставка">
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper-servise-part">
+              <div class="servise-part" id="part-warranty">
+                <div class="wrapper-delivery">
+                  <h3>Гарантия</h3>
+                  <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                </div>
+                <div class="icon-servise">
+                  <img src="img/warranty.svg" width="172" height="194" alt="картинка гарантиия">
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper-servise-part">
+              <div class="servise-part" id="part-credit">
+                <div class="wrapper-delivery">
+                  <h3>Кредит</h3>
+                  <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                </div>
+                <div class="icon-servise">
+                  <img src="img/credit.svg" width="157" height="168" alt="картинка доставка">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
 
 
       </main>
