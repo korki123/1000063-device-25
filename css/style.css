@@ -160,9 +160,9 @@ opacity: 0.3;
   width: 180px;
 }
 
-.user-login span {
+.user-login svg {
   /* width: 180px; */
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .user-logout {
@@ -189,12 +189,12 @@ width: 100px;
   padding-left: 7px;
 }
 
-.user-compare span {
-  padding-left: 7px;
+.user-compare svg {
+  padding-right: 7px;
 }
 
-.user-cart span {
-  padding-left: 11px;
+.user-cart svg {
+  padding-right: 11px;
 }
 
 /* ========================= каталог товаров ===== доставка и т.д.================== */
@@ -260,9 +260,8 @@ width: 100px;
 
 /* ====================================== шапка закончилась ====================================== */
 
-.site-container {
+.wrapper-container {
   width: 1160px;
-  padding: 0px 20px;
   margin: 0 auto;
 }
 
@@ -274,8 +273,8 @@ width: 100px;
   min-height: 504px;
   margin: 0 auto;
 
-  /* padding: 0 50px 99px; */
-  padding-bottom: 102px;
+  padding: 0 45px;
+  padding-bottom: 99px;
   position: relative;
 }
 
@@ -305,7 +304,7 @@ display: none;
 
 .wrapper-photo {
   width: 50%;
-  padding-left: 47px;
+  padding-left: 41px;
   padding-top: 14px;
 
   min-height: 486px;
@@ -334,7 +333,7 @@ display: none;
 
   width: 100px;
   height: 7px;
-  background-color: red;
+  background-color: #ffffff;
 
   margin-top: 46px;
 
@@ -346,7 +345,7 @@ display: none;
   font-size: 179px;
   line-height: 180px;
 
-  color: red;
+  color: #ffffff;
 }
 
 .slide-slogan {
@@ -370,7 +369,7 @@ display: none;
 /* ==================================кнопка подробнее на слайдере=============================== */
 .slide-button {
   position: relative;
-  padding-bottom: 90px;
+  padding-bottom: 86px;
   padding-left: 4px;
 }
 
@@ -398,6 +397,9 @@ display: none;
   padding-right: 42px;
 
   position: absolute;
+
+  left: 0;
+  top: -3px;
 }
 
 .slide-button a:hover::before {
@@ -410,7 +412,7 @@ display: none;
 
 
 
-  /* ==================================кнопка подробнее на слайдере=============================== */
+  /* ==================================кнопка подробнее на слайдере финиш =============================== */
 
 
 .specs {
@@ -453,8 +455,8 @@ display: none;
   list-style: none;
   position: absolute;
 
-  bottom: 250px;
-  right: 26px;
+  bottom: 252px;
+  right: 78px;
 
   z-index: 5;
 }
@@ -600,7 +602,7 @@ a .category {
   position: absolute;
 
   top: -67px;
-  right: -125px;
+  left: 276px;
 
 }
 
@@ -725,7 +727,7 @@ a .category {
   padding-left: 20px;
 
   background-color: #000000;
-  width: 268px;
+  width: 260px;
 
   position: absolute;
   top: 13px;
@@ -746,7 +748,7 @@ a .category {
   padding-left: 26px;
 
   background-color: #000000;
-  width: 261px;
+  width: 255px;
 
   position: absolute;
   top: 73px;
@@ -768,7 +770,7 @@ a .category {
   padding-left: 39px;
 
   background-color: #000000;
-  width: 247px;
+  width: 242px;
 
   position: absolute;
   top: 143px;
@@ -779,16 +781,460 @@ a .category {
 }
 
 
-======================================== бренды ========================================
+/* ======================================== бренды ======================================== */
 
 .brand {
-  width: 100%;
   padding-top: 94px;
+  padding-bottom: 148px;
 }
 
 .brand-list {
   width: 1160px;
   margin: 0 auto;
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.brand-dji {
+  width: 260px;
+  height: 100px;
+  background-image: url(../img/dji-bw.jpg);
+  background-size: 260px 100px;
+  background-color: #d9d9d9;
+}
+
+.brand-dji:hover {
+  background-image: url(../img/dji.jpg);
+  background-color: #d9d9d9;
+}
+
+
+.brand-sp {
+  width: 260px;
+  height: 100px;
+  background-image: url(../img/sp-gadget-bw.jpg);
+  background-size: 260px 100px;
+  background-color: #d9d9d9;
+}
+
+.brand-sp:hover {
+  background-image: url(../img/sp-gadget.jpg);
+  background-size: 260px 100px;
+  background-color: #d9d9d9;
+}
+
+.brand-gorpo {
+  width: 260px;
+  height: 100px;
+  background-image: url(../img/gopro-bw.jpg);
+  background-size: 260px 100px;
+  background-color: #d9d9d9;
+}
+
+.brand-gorpo:hover {
+  background-image: url(../img/gopro.jpg);
+  background-size: 260px 100px;
+  background-color: #d9d9d9;
+}
+
+.brand-vive {
+  width: 260px;
+  height: 100px;
+  background-image: url(../img/vive-bw.jpg);
+  background-size: 260px 100px;
+  background-color: #d9d9d9;
+}
+
+.brand-vive:hover {
+  background-image: url(../img/vive.jpg);
+  background-size: 260px 100px;
+  background-color: #d9d9d9;
+}
+
+/* =========================================================== о нас =========================================================== */
+.about {
+padding-bottom: 90px;
+}
+
+.about-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  /* padding-bottom: 96px; */
+}
+
+.info,
+.contact {
+  width: 50%;
+  margin-left: 20px;
+  position: relative;
+}
+
+.info h3,
+.contact h3 {
+  margin: 0;
+
+  font-family: gilroyextrabold, Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+
+  margin: 0;
+  padding-bottom: 42px;
+
+}
+
+.info::before,
+.contact::before {
+  content: "";
+
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+
+  position: absolute;
+  top: -54px;
+  left: 0;
+}
+
+.info p,
+.contact p {
+  margin: 0;
+  padding-bottom: 30px;
+
+  font-family: OpenSans-Light, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+
+
+  color: #464646;
+}
+
+.info p:nth-child(2) {
+  padding-right: 115px;
+}
+
+.info p:nth-child(3) {
+  padding-right: 107px;
+  padding-bottom: 65px;
+}
+
+
+.contact p {
+  padding-right: 65px;
+  padding-bottom: 38px;
+}
+
+.info-transport {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  padding-bottom: 85px;
+}
+
+.info-transport li {
+  margin: 0;
+  list-style: circle;
+  color: #e5e5e5;
+}
+
+.info-transport a {
+  font-family: gilroyextrabold, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  padding-left: 15px;
+  color: #000000;
+}
+
+.info-button {
+  position: relative;
+}
+
+.info-button::before {
+  content: "Подробнее о нас";
+
+  background-image: linear-gradient(
+  180deg,
+  transparent 16px,
+  #F0C52E 16px,
+  #F0C52E 24px,
+  transparent 24px,
+  transparent 40px);
+
+  font-family: gilroyextrabold, Arial, sans-serif;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 3.5px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+
+  padding-left: 22px;
+  padding-right: 22px;
+
+  position: absolute;
+
+  left: 0px;
+  bottom: -8px;
+}
+
+.info-button:hover::before {
+  background-color: #F0C52E;
+}
+
+.info-button:active::before {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.map {
+  width: 560px;
+  height:222px;
+  background-color: #e5e5e5;
+
+}
+
+.contact-button::before {
+  content: "Напишите нам";
+
+  background-image: linear-gradient(
+  180deg,
+  transparent 16px,
+  #F0C52E 16px,
+  #F0C52E 24px,
+  transparent 24px,
+  transparent 40px);
+
+  font-family: gilroyextrabold, Arial, sans-serif;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 3.5px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  position: absolute;
+
+  left: 0px;
+  bottom: -108px;
+}
+
+.contact-button:hover::before {
+  background-color: #F0C52E;
+}
+
+.contact-button:active::before {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* ================================================ футер ====================================== */
+
+footer {
+  background-color: #464646;
+}
+
+.main-footer {
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-first,
+.footer-user {
+  width: 360px;
+}
+
+.footer-logo {
+  padding-top: 65px;
+  padding-bottom: 26px;
+  width: 163px;
+  position: relative;
+}
+
+.footer-logo::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #F0C52E;
+
+  position: absolute;
+  left: 0;
+  bottom: -114px;
+}
+
+.footer-logo svg {
+  fill: #F0C52E;
+}
+
+.footer-logo svg:hover {
+  opacity: 0.6;
+}
+
+.footer-logo svg:active {
+  opacity: 0.3;
+}
+
+.footer-address {
+  margin: 0;
+  font-family: OpenSans-Light, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+
+
+.footer-second {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  list-style: none;
+  margin: 0;
+  padding: 138px 5px 67px 5px;
+
+  font-family: gilroyextrabold, Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.footer-service a {
+  color: #ffffff;
+  background-color: #464646;
+  /* padding-bottom: 70px; */
+}
+
+.footer-service a:hover {
+  opacity: 0.6;
+}
+
+.footer-service a:active {
+  opacity: 0.3;
+}
+
+
+
+/* .footer-service li {
+  padding-left: 10px;
+  padding-right: 10px;
+} */
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-social {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 0 11px;
+  margin-bottom: 50px;
+  /* background-color: #464646; */
+}
+
+.icon-social svg {
+  fill: rgba(255, 255, 255, 0.3)
+}
+
+.icon-social svg:hover{
+  fill: rgba(255, 255, 255, 0.6)
+}
+
+.icon-social svg:active{
+  fill: rgba(255, 255, 255, 0.1)
+}
+
+
+.footer-three {
+  text-align: right;
+  padding-top: 70px;
+}
+
+
+
+.footer-user {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 33px;
+
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: right;
+}
+
+.footer-user svg,
+.logo-academy svg {
+  fill: #F0C52E;
+
+}
+
+
+.footer-user a {
+  font-family: OpenSans-Light, Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user a:hover {
+  color: #ffffff;
+}
+
+.footer-user svg:hover {
+  opacity: 0.6;
+}
+
+.footer-user a:active,
+.footer-user svg:active {
+  opacity: 0.3;
+}
+
+
+.footer-user svg:last-child {
+  padding-right: 12px;
+  }
+
+.footer-user li:first-child {
+  padding-left: 31px;
+}
+
+.footer-three p {
+  padding-bottom: 51px;
+  color: #ffffff;
+}
+
+.logo-academy svg:hover {
+  opacity: 0.6;
+}
+
+.logo-academy svg:active {
+  opacity: 0.3;
 }
