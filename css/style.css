@@ -233,8 +233,8 @@ width: 100px;
   position: relative;
 }
 
-.catalog img {
-  padding-left: 14px;
+.catalog svg {
+  fill: #272525;
   opacity: 0.3;
 }
 
@@ -257,6 +257,56 @@ width: 100px;
 .contacts {
   margin-left: auto;
 }
+
+
+/* ====================================== поп-ап каталог ====================================== */
+
+.pop-up-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  position: absolute;
+
+  top: 150px;
+  left: 0px;
+
+  background-color: #F7E296;
+
+  z-index: 10;
+
+  display: none;
+}
+
+.pop-up-catalog {
+  display: flex;
+  padding-left: 60px;
+}
+
+.pop-up-catalog-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 41px;
+  padding-right: 40px;
+
+  width: 200px;
+
+  list-style: none;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  line-height: 36px;
+
+  text-transform: initial;
+}
+
+.pop-up-catalog-list a {
+  color: #000000;
+}
+
+
+/* ====================================== поп-ап каталог финиш ====================================== */
+
 
 /* ====================================== шапка закончилась ====================================== */
 
@@ -779,6 +829,81 @@ a .category {
   cursor: pointer;
 
 }
+
+/* ======================================== попап пишите нам ======================================== */
+
+.pop-up-write-wrapper {
+  width: 1440px;
+  /* position: fixed; */
+  /* left: auto;
+  right: auto;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 92px;
+
+  background: rgba(0,0,0,0.00);
+  box-shadow: 0 10px 20px 0 #F1F1F1; */
+
+  display: ;
+}
+
+.pop-up-write {
+  width: 960px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.00);
+  box-shadow: 0 10px 20px 0 #F1F1F1;
+
+  position: relative;
+}
+
+.write-form {
+  box-sizing: border-box;
+  padding: 0 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 92px;
+
+  border: none;
+}
+
+.write-form label {
+  width: 360px;
+}
+
+.write-form input {
+  box-sizing: border-box;
+  width: 360px;
+  padding-top: 14px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+
+  background-color: #f2f2f2;
+
+  border: none;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(70, 70, 70, 0.4);
+  line-height: 18px;
+}
+
+
+.write-form p {
+  margin: 0;
+  font-family: gilroyextrabold, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 19px;
+}
+
+.write-leter {
+  flex-grow: 1;
+}
+
+/* ======================================== попап пишите нам финиш ======================================== */
 
 
 /* ======================================== бренды ======================================== */

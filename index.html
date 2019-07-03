@@ -57,7 +57,11 @@
         </ul>
 
         <ul class="navig-servise">
-          <li class="catalog"><a href="#">Каталог товаров</a><img src="img/plus.svg" width="16" height="16" alt="Раскрыть каталог">
+          <li class="catalog">
+            <a href="#">Каталог товаров
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="nonzero" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/>
+            </svg>
+          </a>
             <ul class="catalog-list">
               <li><a href="#">Виртуальная реальность  </a></li>
               <li><a href="#">Моноподы для селфи </a></li>
@@ -68,6 +72,29 @@
             </ul>
           </li>
 
+
+          <!-- ================================== попап каталог ================================== -->
+
+          <div class="pop-up-wrapper">
+            <div class="pop-up-catalog">
+              <ul class="pop-up-catalog-list photo">
+                <li><a href="">Виртуальная реальность</a> </li>
+                <li><a href="">Моноподы для селфи </a></li>
+                <li><a href="">Экшн-камеры </a></li>
+              </ul>
+
+              <ul class="pop-up-catalog-list watch">
+                <li><a href="">Фитнес-браслеты </a></li>
+                <li><a href="">Умные часы </a></li>
+              </ul>
+
+              <ul class="pop-up-catalog-list quadro">
+                <li><a href="">Квадрокоптеры</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ================================== попап каталог финиш ================================== -->
           <li>
             <ul class="delivery-guaranty">
               <li class="delivery">
@@ -82,6 +109,8 @@
         </ul>
       </nav>
     </header>
+
+
 
   <!-- ================================== слайдер ================================== -->
 
@@ -330,6 +359,37 @@
           </section>
         </section>
         <!-- ================================= слайдер доставка финиш ================================= -->
+
+        <!-- ================================= попап доставка ================================= -->
+        <section class="pop-up-write-wrapper">
+          <form class="pop-up-write" action="" method="post">
+            <div class="write-form">
+              <label><p class="field-name">Ваше имя:</p>
+                <p>
+                  <input type="text" name="text" value="Имя Фамилия" required>
+                </p>
+              </label>
+              <label>
+                <p class="field-name">Ваш e-mail:</p>
+                <input type="email" name="mail" value="email@example.com" required>
+              </label>
+              <label class="write-leter">
+                <p>Текст письма:</p>
+                <textarea class="field-name" name="letter">В свободной форме</textarea>
+              </label>
+            </div>
+
+            <label for="">
+              <input type="submit" name="button" value="Отправить">
+            </label>
+          </form>
+
+        </section>
+
+
+
+        <!-- ================================= попап доставка финиш ================================= -->
+
 
         <section class="brand">
 
