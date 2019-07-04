@@ -133,18 +133,60 @@ opacity: 0.3;
 }
 
 .search {
-  width: 520px;
+  width: 414px;
   margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: bottom;
+  padding-right: 100px;
+  position: relative;
+
 }
+
+.searh-field {
+  width: 300px;
+}
+
 
 .search input {
   padding: 0;
   background-color: transparent;
   border-width: 0;
   padding-left: 20px;
+  line-height: 30px;
 
   opacity: 0.3;
 }
+
+.search input:hover {
+  opacity: 0.6;
+}
+
+.search input:focus {
+  color: #000000;
+}
+
+.searh-button input {
+  color: transparent;
+}
+
+.searh-button input {
+  width: 85px;
+  height: 49px;
+  outline:  2px solid #000000;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+  line-height: 30px;
+
+  position: absolute;
+  right: 100px;
+  bottom: -10px;
+}
+
 
 .user-login-logout {
   padding: 0;
@@ -507,8 +549,6 @@ display: none;
 
   bottom: 252px;
   right: 78px;
-
-  z-index: 5;
 }
 
 .slider-control label {
@@ -529,10 +569,8 @@ display: none;
   opacity: 0.6;
 }
 
-input.products:checked ~ .slider-control label {
-  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-rule='nonzero'%3E%3Cpath d='M6 1.043A4.962 4.962 0 0 1 10.957 6 4.962 4.962 0 0 1 6 10.957 4.962 4.962 0 0 1 1.043 6 4.962 4.962 0 0 1 6 1.043zM6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0z'/%3E%3Cpath d='M6 4.719c.707.001 1.28.574 1.281 1.281A1.283 1.283 0 0 1 6 7.281 1.283 1.283 0 0 1 4.719 6 1.283 1.283 0 0 1 6 4.719zm0-1.027a2.308 2.308 0 1 0 0 4.616 2.308 2.308 0 0 0 0-4.616z'/%3E%3C/g%3E%3C/svg%3E");
-  background-color: red;
-}
+/* input.products:checked ~ .slider-control label {
+} */
 
 
 
@@ -542,9 +580,11 @@ input.products:checked ~ .slider-control label {
   display: block;
 }
 
-#product-one:checked ~ .slider label[for product-one],
-#product-two:checked ~ .slider label[for product-two],
-#product-three:checked ~ .slider label[for product-three] {
+#product-one:checked ~ .slider-list .slider-control label[for="product-one"],
+#product-two:checked ~ .slider-list .slider-control label[for="product-two"],
+#product-three:checked ~ .slider-list .slider-control label[for="product-three"] {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-rule='nonzero'%3E%3Cpath d='M6 1.043A4.962 4.962 0 0 1 10.957 6 4.962 4.962 0 0 1 6 10.957 4.962 4.962 0 0 1 1.043 6 4.962 4.962 0 0 1 6 1.043zM6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0z'/%3E%3Cpath d='M6 4.719c.707.001 1.28.574 1.281 1.281A1.283 1.283 0 0 1 6 7.281 1.283 1.283 0 0 1 4.719 6 1.283 1.283 0 0 1 6 4.719zm0-1.027a2.308 2.308 0 1 0 0 4.616 2.308 2.308 0 0 0 0-4.616z'/%3E%3C/g%3E%3C/svg%3E");
+
 }
 
 
@@ -833,24 +873,22 @@ a .category {
 /* ======================================== попап пишите нам ======================================== */
 
 .pop-up-write-wrapper {
-  width: 1440px;
-  /* position: fixed; */
-  /* left: auto;
-  right: auto;
-  box-sizing: border-box;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 92px;
 
-  background: rgba(0,0,0,0.00);
-  box-shadow: 0 10px 20px 0 #F1F1F1; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 
-  display: ;
+  display: none;
 }
 
 .pop-up-write {
   width: 960px;
-  margin: 0 auto;
+  /* margin: 0; */
   background: rgba(0,0,0,0.00);
   box-shadow: 0 10px 20px 0 #F1F1F1;
 
@@ -865,14 +903,23 @@ a .category {
   justify-content: space-between;
   padding-top: 92px;
 
+  background-color: #ffffff;
+
   border: none;
+
+  z-index: 10;
 }
 
 .write-form label {
   width: 360px;
 }
 
-.write-form input {
+.write-form .write-leter {
+  width: 100%;
+}
+
+.write-form input,
+.write-leter textarea {
   box-sizing: border-box;
   width: 360px;
   padding-top: 14px;
@@ -890,6 +937,28 @@ a .category {
   line-height: 18px;
 }
 
+.write-form input:hover,
+.write-leter textarea:hover {
+  background-color: #eaeaea;
+}
+
+.write-form input:focus,
+.write-leter textarea:focus {
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  outline: 3px solid #F0C52E;
+  color: #464646;
+}
+
+.write-form input:invalid {
+  background-color: #f6dad9;
+}
+
+.write-leter textarea {
+  width: 760px;
+  height: 156px;
+}
 
 .write-form p {
   margin: 0;
@@ -899,9 +968,46 @@ a .category {
   padding-bottom: 19px;
 }
 
-.write-leter {
-  flex-grow: 1;
+.send-form button {
+  border: none;
+  background-color: transparent;
+
+  background-image: linear-gradient(
+  180deg,
+   transparent 16px,
+  #F0C52E 16px,
+  #F0C52E 24px,
+  transparent 24px);
+
+  text-align: center;
+
+  cursor: pointer;
+
+  font-family: gilroyextrabold, Arial, sans-serif;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 3.5px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+
+  padding: 0 35px;
+
+  margin-top: 48px;
+  margin-bottom: 87px;
+
 }
+
+.send-form button {
+  outline: none;
+}
+
+.send-form button:hover {
+  background-color: #F0C52E;
+}
+/* .write-leter {
+  flex-grow: 1;
+} */
 
 /* ======================================== попап пишите нам финиш ======================================== */
 
@@ -1124,9 +1230,14 @@ padding-bottom: 90px;
 
 }
 
-.contact-button::before {
-  content: "Напишите нам";
+.contact-button input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
 
+
+.contact-button input {
   background-image: linear-gradient(
   180deg,
   transparent 16px,
@@ -1152,11 +1263,15 @@ padding-bottom: 90px;
   bottom: -108px;
 }
 
-.contact-button:hover::before {
+
+
+.contact-button:hover::before,
+.contact-button input:hover {
   background-color: #F0C52E;
 }
 
-.contact-button:active::before {
+.contact-button:active::before,
+.contact-button input:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1333,12 +1448,12 @@ footer {
   color: #ffffff;
 }
 
-.footer-user svg:hover {
+
+.footer-user a:hover svg {
   opacity: 0.6;
 }
 
-.footer-user a:active,
-.footer-user svg:active {
+.footer-user a:active {
   opacity: 0.3;
 }
 
@@ -1362,4 +1477,30 @@ footer {
 
 .logo-academy svg:active {
   opacity: 0.3;
+}
+
+/* ============================================ попап карта ============================================  */
+
+
+.pop-up-map-wrapper {
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  display: none;
+}
+
+.pop-up-map {
+  width: 960px;
+  height: 559px;
+  background: #E9E9E9;
+  box-shadow: 0 10px 20px 0 rgba(4,6,6,0.20);
+
+  position: relative;
 }
